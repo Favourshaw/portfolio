@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+    padding: 18px;
+    height: auto;
+  }
+  
+  .flex-item-left {
+    background-color: #ffffff;
+    padding: 10px;
+    flex: 30%;
+  }
+  
+  .flex-item-right {
+    background-color: #ffffff;
+    padding: 10px;
+    flex: 70%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+  
+  
+  
+  .cardLeft {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius: 5px;
+  }
+  .imgAbout {
+  width:90%; 
+  padding:10px;
+  border-radius: 10px;
+  }
+  
+  .at {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  .rightCardBottom {
+    border: 1px solid #6c757d;
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius: 0px 0px 2px 2px;
+    padding: 18px;
+  }
+  
+  .rightCardTop {
+    border: 1px solid #6c757d;
+    border-bottom: 1px solid transparent;
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+    font-family: arial;
+    border-radius: 2px 2px 0px 0px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 18px;
+    padding-right: 18px;
+    background: rgba(0,0,0,.03);;
+    
+  }
+  
+  
+  .ptext {
+    text-decoration: none;
+    font-size: 12px;
+    text-align: left;
+  }
+  
+  .greenDot{
+  font-size:50px; color:#28a745}
+  .yellowDot{
+  font-size:50px; color:#ffc107}
+  .redDot{
+  font-size:50px; color:#dc3545;}
