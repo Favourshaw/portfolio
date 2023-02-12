@@ -7,20 +7,24 @@
     flex-direction: row;
     font-size: 30px;
     text-align: center;
-    padding: 18px;
-    height: auto;
+    padding: 68px;
+    justify-content: center;
+  align-items: center;
+    
+    
   }
   
   .flex-item-left {
     background-color: #ffffff;
     padding: 10px;
-    flex: 30%;
+    flex: 35%;
+    
   }
   
   .flex-item-right {
     background-color: #ffffff;
     padding: 10px;
-    flex: 70%;
+    flex: 65%;
   }
   
   /* Responsive layout - makes a one column-layout instead of two-column layout */
@@ -59,7 +63,7 @@
     text-align: center;
     font-family: arial;
     border-radius: 0px 0px 2px 2px;
-    padding: 18px;
+    padding: 38px;
   }
   
   .rightCardTop {
@@ -79,10 +83,18 @@
   }
   
   
+  
   .ptext {
     text-decoration: none;
-    font-size: 12px;
+    font-size: 15px;
     text-align: left;
+    padding: 20px;
+  }
+
+  .ptextHead {
+    font-size: 50px;
+    line-height: 99px;
+    
   }
   
   .greenDot{

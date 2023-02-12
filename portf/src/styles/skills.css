@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+.skills {
+  background-color: #111111;
+  padding: 20px;
+  font-family: Arial;
+  
+  margin: auto;
+}
+
+/* Center website */
+.skillsContainer {
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+.skillsTitle {
+  text-align: center;
+  color: white;
+}
+
+.skillsIcon {
+  margin: auto;
+}
+
+.skillsRow {
+  margin: auto;
+}
+
+/* Add padding BETWEEN each column */
+.skillsRow,
+.skillsRow > .skillsCol {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.skillsCol {
+  float: left;
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Clear floats after rows */
+.skillsRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.skillsTab {
+  background-color: rgb(32, 32, 32);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .skillsCol {
+    width: 33.33%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .skillsCol {
+    width: 50%;
+  }
+}

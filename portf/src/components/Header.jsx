@@ -3,13 +3,28 @@ import Typical from "react-typical";
 import { Icon } from "@iconify/react";
 import Switch from "react-switch";
 import "../styles/header.css";
+import githubCorner from "../assets/githubCorner.svg";
 
 const Header = () => {
   return (
     <div className="header">
+      
       <div className="overlay"></div>
+      
       <video src={videobg} autoPlay loop muted></video>
       <div className="content">
+
+        <div>
+        <a
+        href="https://your-url"
+        className="github-corner"
+        aria-label="View source on GitHub"
+      >
+        
+        <img src={githubCorner} alt="git" />
+      </a>
+        </div>
+        
         <Icon icon="la:laptop-code" style={{ fontSize: "84px" }} />
         <br />
         <h1>
@@ -37,6 +52,7 @@ const Header = () => {
           ></Typical>
         </p>
       </div>
+      
     </div>
   );
 };

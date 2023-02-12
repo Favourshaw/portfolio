@@ -1,0 +1,65 @@
+
+  
+  .project {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  .projectContainer {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .projectTitle{
+  text-align: center;
+  }
+  
+  
+  .projRow {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each proCol */
+  .projRow,
+  .projRow > .proCol {
+    padding: 8px;
+  }
+  
+  /* Create three equal proCols that floats next to each other */
+  .proCol {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after projRows */ 
+  .projRow:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .contents {
+    background-color: white;
+    padding: 10px;
+  }
+
+  .projImg {
+      width: 100%;
+  }
+  
+  /* Responsive layout - makes a two proCol-layout instead of four proCols */
+  @media screen and (max-width: 900px) {
+    .proCol {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two proCols stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .proCol {
+      width: 100%;
+    }
+  }
